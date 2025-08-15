@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muslim Kayhan ICT</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    header, section { padding: 20px; }
+    nav { background: #004d7a; color: white; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+    nav button { background: white; color: #004d7a; border: none; padding: 5px 10px; cursor: pointer; }
+    .hidden { display: none; }
+    .section-title { font-size: 1.5em; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Muslim Kayhan ICT</strong></div>
+    <div>
+      <button onclick="switchLang('en')">English</button>
+      <button onclick="switchLang('fa')">دری</button>
+    </div>
+  </nav>
+
+  <!-- English Content -->
+  <div id="en">
+    <header>
+      <h1>Reliable Wi-Fi & IT Solutions</h1>
+      <p>Empowering homes and businesses with seamless connectivity.</p>
+    </header>
+
+    <section>
+      <div class="section-title">About Us</div>
+      <p>We provide professional Wi-Fi and ICT services tailored to your needs.</p>
+    </section>
+
+    <section>
+      <div class="section-title">Services</div>
+      <ul>
+        <li>Wi-Fi setup and troubleshooting</li>
+        <li>Domain and email configuration</li>
+        <li>Website development and branding</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Contact</div>
+      <p>Email: admin@muslimkayhanict.com</p>
+    </section>
+  </div>
+
+  <!-- Dari Content -->
+  <div id="fa" class="hidden" dir="rtl">
+    <header>
+      <h1>راه‌حل‌های قابل اعتماد وای‌فای و فناوری اطلاعات</h1>
+      <p>اتصال بدون وقفه برای خانه‌ها و کسب‌وکارها.</p>
+    </header>
+
+    <section>
+      <div class="section-title">درباره ما</div>
+      <p>ما خدمات حرفه‌ای وای‌فای و ICT را مطابق نیازهای شما ارائه می‌دهیم.</p>
+    </section>
+
+    <section>
+      <div class="section-title">خدمات</div>
+      <ul>
+        <li>نصب و رفع مشکل وای‌فای</li>
+        <li>پیکربندی دامنه و ایمیل</li>
+        <li>توسعه وب‌سایت و برندینگ</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">تماس</div>
+      <p>ایمیل: admin@muslimkayhanict.com</p>
+    </section>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('fa').classList.toggle('hidden', lang !== 'fa');
+    }
+  </script>
+</body>
+</html>
